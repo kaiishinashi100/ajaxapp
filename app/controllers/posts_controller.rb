@@ -9,6 +9,7 @@ class PostsController < ApplicationController
   end
 
   def checked
+  
     post = Post.find(params[:id])
     if post.checked
       #activerecordで更新する
